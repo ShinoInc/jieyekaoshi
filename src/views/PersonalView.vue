@@ -1,12 +1,12 @@
 <template>
   <div class="personal-view">
     <van-nav-bar title="个人中心" />
-    <van-form @submit="onSubmit">
+    <van-form class="form" @submit="onSubmit">
       <van-field
         v-model="username"
         label="用户名"
         name="username"
-        placeholder="用户名"
+        placeholder="请输入用户名"
         required
         clearable
         left-icon="contact"
@@ -20,7 +20,7 @@
         label="密码"
         name="password"
         type="password"
-        placeholder="密码"
+        placeholder="请输入密码"
         required
         clearable
         left-icon="edit"
@@ -29,8 +29,8 @@
           <van-icon name="question-o" @click="toastPwd" />
         </template>
       </van-field>
-      <div style="margin: 16px">
-        <van-button block type="info" native-type="submit">提交</van-button>
+      <div class="button">
+        <van-button type="info" native-type="submit" block>登录</van-button>
       </div>
     </van-form>
   </div>
@@ -64,3 +64,13 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+.form {
+  margin-top: 10px;
+
+  .button {
+    margin-top: 10px;
+  }
+}
+</style>

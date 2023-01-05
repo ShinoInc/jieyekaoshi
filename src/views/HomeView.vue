@@ -13,7 +13,7 @@
         <img class="swipe-image" v-lazy="image" @click="startPreview(index)" />
       </van-swipe-item>
     </van-swipe>
-    <van-grid :gutter="10" :border="false" square clickable>
+    <van-grid :border="false" square clickable>
       <van-grid-item v-for="(content, index) in gridContent" :key="index">
         <img class="grid-image" :src="content.image" />
         <span class="grid-text">{{ content.text }}</span>
@@ -210,7 +210,7 @@ export default {
 
 .employment,
 .tabs {
-  border-top: 10px solid #fafafa;
+  margin-top: 10px;
 }
 
 .employment-image {
@@ -231,6 +231,12 @@ export default {
 
   /deep/ .van-tabs__line {
     background-color: blue;
+  }
+
+  /deep/ .van-tabs__content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
   }
 }
 

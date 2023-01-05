@@ -48,9 +48,10 @@ export default {
 
 <style lang="less" scoped>
 .circle {
-  border-top: 10px solid #fafafa;
+  margin-top: 10px;
   width: 100%;
   height: 120px;
+  background-color: #fff;
 
   /deep/ svg {
     padding: 10px 0;
@@ -59,6 +60,6 @@ export default {
 }
 
 .collapse {
-  border-top: 10px solid #fafafa;
+  margin-top: 10px;
 }
 </style>
