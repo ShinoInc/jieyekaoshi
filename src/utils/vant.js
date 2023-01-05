@@ -13,6 +13,9 @@ import {
   Card,
   Tabbar,
   TabbarItem,
+  Circle,
+  Collapse,
+  CollapseItem,
   Lazyload
 } from 'vant'
 
@@ -29,5 +32,8 @@ Vue.use(Tabs)
 Vue.use(Card)
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
+Vue.use(Circle)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
 
 Vue.use(Lazyload)
