@@ -16,7 +16,12 @@ import {
   Circle,
   Collapse,
   CollapseItem,
-  Lazyload
+  Form,
+  Field,
+  Button,
+  Lazyload,
+  Notify,
+  Toast
 } from 'vant'
 
 Vue.use(NavBar)
@@ -35,5 +40,10 @@ Vue.use(TabbarItem)
 Vue.use(Circle)
 Vue.use(Collapse)
 Vue.use(CollapseItem)
+Vue.use(Form)
+Vue.use(Field)
+Vue.use(Button)
 
 Vue.use(Lazyload)
+Vue.use(Notify)
+Vue.use(Toast)
